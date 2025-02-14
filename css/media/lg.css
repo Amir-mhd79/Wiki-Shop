@@ -1,0 +1,1333 @@
+@import "../animations/animation.css";
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 116px;
+  box-shadow: 0 1px 10px #707070;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+/*start making CSS for left Section*/
+.header > .left {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+/*start making CSS for sabtAgahi button*/
+.header > .left > .sabtAgahi {
+  width: 109px;
+  height: 31px;
+  border-radius: 15px;
+  border: none;
+  font-family: YekanBakh-Bold;
+  background-color: var(--green-1);
+  cursor: pointer;
+  position: relative;
+}
+.header > .left > .sabtAgahi:hover {
+  transform: translateX(-13px);
+}
+.header > .left > .sabtAgahi:hover::after {
+  content: url(../../../images/plus.png);
+  position: absolute;
+  right: -30px;
+  top: 3px;
+}
+/*end of making CSS for sabtAgahi button*/
+
+/*start making CSS for icons of left section*/
+.header > .left > .icons {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.header > .left > .icons > .icon {
+  cursor: pointer;
+}
+.header > .left > .icons > .search {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 300ms;
+}
+.header > .left > .icons > .search:hover {
+  background-color: var(--green-2);
+}
+
+/*start making CSS for Search Box*/
+.header > .left > .icons > .search > .searchBox {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: calc(100vw - 17px);
+  background-color: white;
+  box-shadow: 1px 1px 10px lightgray;
+  cursor: auto;
+  padding-bottom: 20px;
+}
+.header > .left > .icons > .search > .searchBox > .top {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.header > .left > .icons > .search > .searchBox > .top > .jostojo {
+  width: 75%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.header
+  > .left
+  > .icons
+  > .search
+  > .searchBox
+  > .top
+  > .jostojo
+  > .fa-times-circle-o {
+  color: #979797;
+  font-size: 20px;
+  cursor: pointer;
+}
+.header
+  > .left
+  > .icons
+  > .search
+  > .searchBox
+  > .top
+  > .jostojo
+  > .searchForm {
+  width: 100%;
+  height: inherit;
+  border-radius: 25px;
+  margin-left: 10px;
+  border: 2px solid #86a9a1;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 0 10px 0 5px;
+}
+.header
+  > .left
+  > .icons
+  > .search
+  > .searchBox
+  > .top
+  > .jostojo
+  > .searchForm
+  > .searchAnything {
+  width: 100%;
+  height: 46px;
+  border-radius: 25px;
+  outline: unset;
+  border: unset;
+  font-family: YekanBakh-Bold;
+  font-size: 18px;
+  color: var(--textColor-1);
+  text-align: end;
+}
+.header
+  > .left
+  > .icons
+  > .search
+  > .searchBox
+  > .top
+  > .jostojo
+  > .searchForm
+  > .searchButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: unset;
+  background-color: var(--green-1);
+  cursor: pointer;
+}
+.header > .left > .icons > .search > .searchBox > .bottom {
+  width: 70%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.508);
+}
+.header > .left > .icons > .search > .searchBox > .bottom > .result {
+  width: 190px;
+  height: min-content;
+  display: flex;
+  justify-content: end;
+}
+.header > .left > .icons > .search > .searchBox > .bottom > .result > .right {
+  background-color: var(--green-3);
+  color: white;
+  font-family: YekanBakh-Regular;
+  font-size: 10px;
+  width: 18px;
+  border-radius: 9px;
+  position: relative;
+}
+.header
+  > .left
+  > .icons
+  > .search
+  > .searchBox
+  > .bottom
+  > .result
+  > .right
+  > .verticalText {
+  width: max-content;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  position: absolute;
+  left: 10px;
+  top: 35px;
+}
+.header
+  > .left
+  > .icons
+  > .search
+  > .searchBox
+  > .bottom
+  > .carView
+  > .right
+  > .verticalText {
+  top: 55px;
+}
+.header > .left > .icons > .search > .searchBox > .bottom > .result > .left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+}
+.header
+  > .left
+  > .icons
+  > .search
+  > .searchBox
+  > .bottom
+  > .result
+  > .left
+  > .natijeJostojo {
+  font-family: YekanBakh-Bold;
+  font-size: 14px;
+  color: var(--textColor-1);
+  margin-bottom: 10px;
+  text-decoration-color: white;
+  transition: 500ms;
+}
+.header
+  > .left
+  > .icons
+  > .search
+  > .searchBox
+  > .bottom
+  > .result
+  > .left
+  > .lastItem {
+  margin-bottom: unset;
+}
+.header
+  > .left
+  > .icons
+  > .search
+  > .searchBox
+  > .bottom
+  > .result
+  > .left
+  > .natijeJostojo:hover {
+  text-decoration: 2px underline var(--green-1);
+  text-underline-offset: 7px;
+}
+.header > .left > .icons > .search > .searchBox > .lastSearch {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: end;
+  margin-top: 25px;
+}
+.header > .left > .icons > .search > .searchBox > .lastSearch > .top {
+  width: 100%;
+  height: 20px;
+  background-color: var(--green-1);
+  border-radius: 10px;
+}
+.header
+  > .left
+  > .icons
+  > .search
+  > .searchBox
+  > .lastSearch
+  > .top
+  > .textLastSearch {
+  text-align: end;
+  font-family: YekanBakh-Bold;
+  font-size: 12px;
+  padding-right: 10px;
+  line-height: 20px;
+}
+.header > .left > .icons > .search > .searchBox > .lastSearch > .bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  font-family: YekanBakh-Bold;
+  font-size: 14px;
+}
+.header
+  > .left
+  > .icons
+  > .search
+  > .searchBox
+  > .lastSearch
+  > .bottom
+  > .lastSearched {
+  color: var(--textColor-1);
+  transition: 500ms;
+  text-decoration-color: white;
+}
+.header
+  > .left
+  > .icons
+  > .search
+  > .searchBox
+  > .lastSearch
+  > .bottom
+  > .lastSearched:hover {
+  text-decoration: 2px underline var(--green-1);
+  text-underline-offset: 7px;
+}
+.header
+  > .left
+  > .icons
+  > .search
+  > .searchBox
+  > .lastSearch
+  > .bottom
+  > .lastSearched
+  > .fa-history {
+  margin-left: 10px;
+}
+.header > .left > .icons > .search > .closeSearchBox {
+  display: none;
+  width: calc(100vw - 17px);
+  height: 100vh;
+  backdrop-filter: blur(3px);
+  background-color: rgba(18, 18, 18, 0.389);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+/*end of making CSS for Search Box*/
+
+/*Continue of making CSS for icons section*/
+.header > .left > .icons > .filter {
+  transition: 300ms;
+  transform: translateY(2px);
+}
+.header > .left > .icons > .filter > svg > path {
+  transition: 300ms;
+}
+.header > .left > .icons > .filter:hover > svg > path {
+  fill: var(--green-1);
+}
+.header > .left > .icons > .like {
+  transition: 300ms;
+  display: flex;
+}
+.header > .left > .icons > .like > svg > path {
+  transition: 300ms;
+}
+.header > .left > .icons > .like:hover > svg > path {
+  fill: red;
+}
+.header > .left > .icons > .like > .fa-heart {
+  display: none;
+  color: red;
+  font-size: 20px;
+}
+.header > .left > .icons > .userLogo {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  cursor: auto;
+  position: relative;
+  height: 50px;
+}
+.header > .left > .icons > .userLogo > svg > path {
+  transition: 300ms;
+}
+.header > .left > .icons > .userLogo:hover > svg > path {
+  fill: var(--green-1);
+}
+
+/*start making CSS for user submenu*/
+.header > .left > .icons > .userLogo > .userSubmenu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: -35px;
+  background-color: #fff;
+  width: 140px;
+  box-shadow: 1px 1px 10px gray;
+  flex-direction: column;
+  align-items: end;
+  padding: 15px 20px 10px 10px;
+}
+.header > .left > .icons > .userLogo > .userSubmenu > .useritem {
+  text-align: end;
+  font-size: 14px;
+  word-spacing: 2px;
+  font-family: YekanBakh-Bold;
+  width: 100px;
+  padding: 10px 0;
+  border-bottom: 1px solid #d3d3d372;
+  text-decoration-color: white;
+  transition: 600ms;
+}
+.header > .left > .icons > .userLogo > .userSubmenu > .useritem:hover {
+  text-decoration: underline var(--green-1);
+  text-underline-offset: 7px;
+}
+.header > .left > .icons > .userLogo > .userSubmenu > .useritem > .userLink {
+  color: var(--textColor-1);
+}
+.header > .left > .icons > .userLogo > .userSubmenu > .lastItem {
+  border-bottom: unset;
+  width: max-content;
+  transform: translateX(5px);
+}
+.header > .left > .icons > .userLogo > .userSubmenu > .useritem > .exit {
+  width: 110px;
+  height: 30px;
+  border: unset;
+  border-radius: 15px;
+  color: white;
+  font-family: YekanBakh-Regular;
+  word-spacing: 3px;
+  background-color: rgb(156, 154, 154);
+  cursor: pointer;
+  transition: 300ms;
+}
+.header > .left > .icons > .userLogo > .userSubmenu > .useritem > .exit:hover {
+  background-color: red;
+}
+/*end of making CSS for user submenu*/
+/*end of making CSS for icons of left section*/
+/*end of making CSS for left Section*/
+
+/* start making CSS for navigation Section*/
+.header > .responsiveNav {
+  display: none;
+}
+.header > .navigation > .items {
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 20px;
+  font-family: YekanBakh-Regular;
+}
+.header > .navigation > .items > .item {
+  position: relative;
+  text-decoration-color: white;
+  transition: 500ms;
+}
+.header > .navigation > .items > .item:hover {
+  text-decoration: 2px underline var(--green-1);
+  text-underline-offset: 7px;
+}
+.header > .navigation > .items > .item > .linkItem {
+  color: var(--textColor-1);
+}
+.header > .navigation > .items > .item > .linkItem::before {
+  all: unset;
+}
+.header > .navigation > .items > .item > .linkItem > .fa {
+  margin-right: 6px;
+  transform: translateY(2px);
+}
+
+/*start making CSS for submenu*/
+.active {
+  display: flex !important;
+}
+.header > .navigation > .items > .item > .submenu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: -30px;
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  box-shadow: 1px 1px 10px gray;
+  flex-direction: column;
+  align-items: end;
+  padding: 15px 20px 15px 10px;
+}
+.header > .navigation > .items > .item > .submenu > .submenuItem {
+  text-align: end;
+  font-size: 14px;
+  word-spacing: 2px;
+  font-family: YekanBakh-Regular;
+  width: 111px;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+  text-decoration-color: white;
+  transition: 600ms;
+}
+.header > .navigation > .items > .item > .submenu > .submenuItem:hover {
+  text-decoration: underline var(--green-1);
+  text-underline-offset: 7px;
+}
+.header > .navigation > .items > .item > .submenu > .endItem {
+  border-bottom: 0;
+}
+.header
+  > .navigation
+  > .items
+  > .item
+  > .submenu
+  > .submenuItem
+  > .submenuItemLink {
+  color: var(--textColor-1);
+}
+/*end of making CSS for submenu*/
+/* end of making CSS for navigation Section*/
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  padding: 0 30px;
+}
+
+/*Start making CSS for top section*/
+.main > .top {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+/*Start making CSS for right section*/
+.main > .top > .right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-family: YekanBakh-Regular;
+}
+.main > .top > .right > .webLocation {
+  font-size: 12px;
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 5px;
+  color: var(--textColor-3);
+}
+.main > .top > .right > .title {
+  font-size: 24px;
+}
+.main > .top > .right > .aboutTitle {
+  font-size: 16px;
+  color: var(--textColor-3);
+}
+/*End of making CSS for right section*/
+/*Start making CSS for left section*/
+.main > .top > .left {
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+}
+/*End of making CSS for left section*/
+/*End of making CSS for top section*/
+
+/*Start making CSS for center section*/
+.main > .center {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main > .center > .wrapper {
+  width: inherit;
+  height: 190px;
+}
+.main > .center > .wrapper > .swiper {
+  width: inherit;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main > .center > .wrapper > .swiper > .swiper-wrapper {
+  width: inherit;
+  height: 150px;
+}
+.main > .center > .wrapper > .swiper > .swiper-wrapper > .swiper-slide {
+  width: 120px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: YekanBakh-Bold;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 1px solid lightgray;
+}
+.activeLeasing {
+  border: 2px solid var(--green-3) !important;
+  background-color: var(--backColor-2);
+}
+.main
+  > .center
+  > .wrapper
+  > .swiper
+  > .swiper-wrapper
+  > .swiper-slide
+  > .imgContainer {
+  height: 60px;
+  margin-bottom: 10px;
+}
+.main
+  > .center
+  > .wrapper
+  > .swiper
+  > .swiper-wrapper
+  > .swiper-slide
+  > .imgContainer
+  > .leasingImg {
+  height: inherit;
+}
+.main
+  > .center
+  > .wrapper
+  > .swiper
+  > .swiper-wrapper
+  > .swiper-slide
+  > .leasingName {
+  font-size: 16px;
+}
+.main
+  > .center
+  > .wrapper
+  > .swiper
+  > .swiper-wrapper
+  > .swiper-slide
+  > .profit {
+  font-size: 12px;
+  background-color: var(--green-3);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 15px;
+  font-family: YekanBakh-Regular;
+  display: none;
+  column-gap: 5px;
+}
+.main > .center > .wrapper > .swiper > .swiper-button-next::after,
+.main > .center > .wrapper > .swiper > .swiper-button-prev::after {
+  all: unset;
+}
+.main > .center > .wrapper > .swiper > .swiper-button-next::before,
+.main > .center > .wrapper > .swiper > .swiper-button-prev::before {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+  background-color: var(--backColor-1);
+  color: white;
+  border-radius: 22px;
+  transition: 300ms;
+  transform: translateY(-20px);
+}
+.main > .center > .wrapper > .swiper > .swiper-button-next:hover::before,
+.main > .center > .wrapper > .swiper > .swiper-button-prev:hover::before {
+  background-color: var(--green-1);
+}
+.main > .center > .wrapper > .swiper > .swiper-button-next::before {
+  transform: translateX(-20px) translateY(-20px);
+}
+
+/*start making submenu for each corporate*/
+.main > .center > .heSub {
+  width: 580px;
+  direction: rtl;
+  display: none;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.main > .center > .heSub > .selectCar,
+.main > .center > .heSub > .natijeHesab {
+  width: inherit;
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+.main > .center > .heSub > .selectCar > .selectItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.main > .center > .heSub > .selectCar > .selectItems > .item {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  font-family: YekanBakh-Bold;
+  padding-bottom: 10px;
+}
+.main > .center > .heSub > .selectCar > .selectItems > .whichCar {
+  border-radius: 10px;
+  padding: 8px 8px 8px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: YekanBakh-Regular;
+  color: var(--textColor-3);
+  cursor: pointer;
+  border: 1px solid lightgray;
+}
+/* ************start making CSS for list of cars************ */
+.main > .center > .heSub > .selectCar > .selectItems > .entekhabKhodro {
+  width: calc(100vw - 17px);
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.644);
+  backdrop-filter: blur(5px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect {
+  width: 370px;
+  height: 590px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: auto;
+  color: black;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .top {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  border-bottom: 1px solid var(--backColor-1);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-family: YekanBakh-Regular;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .top
+  > .brandText {
+  font-size: 18px;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .top
+  > .aboutBrand {
+  font-size: 14px;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .top
+  > .searchBrand {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: var(--backColor-1);
+  padding: 10px;
+  border-radius: 20px;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .top
+  > .searchBrand
+  > .inSearch {
+  height: inherit;
+  border: unset;
+  outline: unset;
+  width: 100%;
+  background-color: unset;
+  padding-right: 10px;
+  font-family: YekanBakh-Bold;
+  font-size: 16px;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .bottom
+  > .carItem {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--backColor-1);
+  cursor: pointer;
+  padding-bottom: 8px;
+  font-family: YekanBakh-Regular;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .bottom
+  > .carItem
+  > .right {
+  display: flex;
+  column-gap: 5px;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .choose {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .choose
+  > .btnCar {
+  width: 160px;
+  height: 30px;
+  border-radius: 15px;
+  border: unset;
+  font-family: YekanBakh-Bold;
+  font-size: 16px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .choose
+  > .selectCar {
+  background-color: var(--textColor-3);
+  color: white;
+  transition: 300ms;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .choose
+  > .selectCar:hover {
+  background-color: var(--green-3);
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .choose
+  > .close {
+  background-color: transparent;
+  border: 1px solid var(--green-3);
+  color: var(--green-3);
+  transition: 300ms;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .entekhabKhodro
+  > .brandSelect
+  > .choose
+  > .close:hover {
+  border: unset;
+  color: white;
+  background-color: red;
+}
+.main > .center > .subVasepariAfam {
+  display: none;
+}
+.main > .center > .subFarazAndishan {
+  display: none;
+}
+.main > .center > .subBankGardeshgari {
+  display: none;
+}
+.main > .center > .subVasepariFarda {
+  display: none;
+}
+.main > .center > .subsasepariPasFarda {
+  display: none;
+}
+.main
+  > .center
+  > .subFarazAndishan
+  > .selectCar
+  > .selectItems
+  > .carPriceToman,
+.main > .center > .subFarazAndishan > .selectCar > .selectItems > .pishPrice,
+.main > .center > .subVasepariFarda > .selectCar > .selectItems > .pishPrice {
+  width: 100%;
+}
+.main
+  > .center
+  > .subFarazAndishan
+  > .selectCar
+  > .selectItems
+  > .carPriceToman
+  > .inputWrapper,
+.main
+  > .center
+  > .subVasepariFarda
+  > .selectCar
+  > .selectItems
+  > .carPriceToman
+  > .inputWrapper,
+.main
+  > .center
+  > .subFarazAndishan
+  > .selectCar
+  > .selectItems
+  > .pishPrice
+  > .inputWrapper,
+.main
+  > .center
+  > .subVasepariFarda
+  > .selectCar
+  > .selectItems
+  > .pishPrice
+  > .inputWrapper {
+  width: inherit;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 5px 10px 5px 5px;
+  transition: 300ms;
+}
+.main
+  > .center
+  > .subFarazAndishan
+  > .selectCar
+  > .selectItems
+  > .carPriceToman
+  > .inputWrapper
+  > .khodroPrice,
+.main
+  > .center
+  > .subVasepariFarda
+  > .selectCar
+  > .selectItems
+  > .carPriceToman
+  > .inputWrapper
+  > .khodroPrice,
+.main
+  > .center
+  > .subFarazAndishan
+  > .selectCar
+  > .selectItems
+  > .pishPrice
+  > .inputWrapper
+  > .pishPrice,
+.main
+  > .center
+  > .subVasepariFarda
+  > .selectCar
+  > .selectItems
+  > .pishPrice
+  > .inputWrapper
+  > .pishPrice {
+  width: 100%;
+  height: 30px;
+  border: unset;
+  outline: unset;
+  font-family: YekanBakh-Bold;
+}
+.main
+  > .center
+  > .subFarazAndishan
+  > .selectCar
+  > .selectItems
+  > .carPriceToman
+  > .inputWrapper:hover,
+.main
+  > .center
+  > .subFarazAndishan
+  > .selectCar
+  > .selectItems
+  > .pishPrice
+  > .inputWrapper:hover,
+.main
+  > .center
+  > .subVasepariFarda
+  > .selectCar
+  > .selectItems
+  > .pishPrice
+  > .inputWrapper:hover {
+  border: 1px solid var(--green-1);
+}
+.main
+  > .center
+  > .subFarazAndishan
+  > .selectCar
+  > .selectItems
+  > .pishPrice
+  > .alertPrice,
+.main
+  > .center
+  > .subVasepariFarda
+  > .selectCar
+  > .selectItems
+  > .pishPrice
+  > .alertPrice {
+  font-size: 10px;
+  color: var(--textColor-3);
+  margin-top: 5px;
+}
+/* ************end of making CSS for list of cars************ */
+.main > .center > .heSub > .selectCar > .selectItems > .pishPrice {
+  display: flex;
+  flex-direction: column;
+}
+.main > .center > .heSub > .selectCar > .selectItems > .pishPrice > .topText {
+  display: flex;
+  justify-content: space-between;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .pishPrice
+  > .pishPardakhtRange {
+  width: inherit;
+  cursor: pointer;
+}
+.main > .center > .heSub > .selectCar > .selectItems > .timeToPardakht {
+  display: flex;
+  justify-content: space-between;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .timeToPardakht
+  > .btnGroup {
+  display: flex;
+  column-gap: 10px;
+}
+.main
+  > .center
+  > .heSub
+  > .selectCar
+  > .selectItems
+  > .timeToPardakht
+  > .btnGroup
+  > .btn,
+.main > .center > .heSub > .selectCar > .selectItems > .aghsatDistance > .btn,
+.main > .center > .heSub > .selectCar > .selectItems > .mohasebe {
+  width: 74px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  padding-top: 2px;
+  border-radius: 25px;
+  border: unset;
+  background-color: unset;
+  border: 1px solid var(--green-3);
+  font-family: YekanBakh-Regular;
+  color: var(--green-3);
+  cursor: pointer;
+}
+.activeButton {
+  background-color: var(--green-3) !important;
+  color: white !important;
+}
+.main > .center > .heSub > .selectCar > .selectItems > .aghsatDistance {
+  display: flex;
+  justify-content: space-between;
+}
+.main > .center > .heSub > .selectCar > .selectItems > .aghsatDistance > .btn {
+  background-color: var(--green-3);
+  color: white;
+  border: unset;
+}
+.main > .center > .heSub > .selectCar > .selectItems > .mohasebe {
+  display: block;
+  width: 100px;
+  height: 30px;
+  background-color: var(--green-3);
+  color: white;
+  border: unset;
+  font-size: 16px;
+}
+.main > .center > .heSub > .natijeHesab {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.main > .center > .heSub > .natijeHesab > .aboutItem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  font-family: YekanBakh-Bold;
+  padding-bottom: 10px;
+}
+.main > .center > .heSub > .natijeHesab > .aboutItem > .itemHead {
+  color: var(--textColor-3);
+}
+.main > .center > .heSub > .natijeHesab > .aboutItem > .textTitle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main > .center > .heSub > .natijeHesab > .need {
+  border: unset;
+  padding-bottom: unset;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.main > .center > .heSub > .natijeHesab > .need > .subNeed {
+  margin-top: 20px;
+  padding-right: 30px;
+  cursor: auto;
+  display: none;
+}
+.main > .center > .heSub > .natijeHesab > .need > .subNeed > .subNeedItem {
+  list-style-type: disc;
+  font-family: YekanBakh-Regular;
+}
+.showText {
+  display: block !important;
+}
+/*End of making submenu for each corporate*/
+/*End of making CSS for center section*/
+
+/*Start making CSS for Bottom of Main section*/
+.main > .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  margin-top: 30px;
+}
+/*Start making CSS for topSection*/
+.main > .bottom > .topSection {
+  width: inherit;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.main > .bottom > .topSection > .sharayet {
+  font-family: YekanBakh-Bold;
+  font-size: 16px;
+  display: flex;
+  align-items: start;
+  column-gap: 10px;
+}
+/*End of making CSS for topSection*/
+/*start making CSS for bottomSection*/
+.main > .bottom > .bottomSection {
+  text-align: justify;
+  font-family: YekanBakh-Regular;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+/*End of making CSS for bottomSection*/
+/*End of making CSS for Bottom of Main section*/
+
+.footer {
+  width: 100%;
+  height: 266px;
+}
+/*Start making CSS for top section*/
+.footer > .top {
+  width: inherit;
+  height: 227px;
+  background-color: var(--green-3);
+  display: flex;
+}
+.footer > .top > .wrapper {
+  width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Start making CSS for namad section */
+.footer > .top > .wrapper > .left {
+  display: flex;
+  align-items: stretch;
+  background-color: var(--backColor-1);
+  border-radius: 10px;
+  padding: 5px;
+  column-gap: 5px;
+}
+.footer > .top > .wrapper > .left > .namad {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.footer > .top > .wrapper > .left > .enamadWrapper {
+  width: 65px;
+}
+/*End of making CSS for namad section */
+
+/*Start making CSS for contact us section*/
+.footer > .top > .wrapper > .center {
+  width: 225px;
+  font-family: YekanBakh-Regular;
+  text-align: end;
+  color: var(--textColor-2);
+}
+.footer > .top > .wrapper > .center > .topSocial {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.footer > .top > .wrapper > .center > .topSocial > .social {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.footer > .top > .wrapper > .center > .topSocial > .socialApps {
+  display: flex;
+  column-gap: 5px;
+}
+.footer > .top > .wrapper > .center > .contactUS {
+  font-size: 12px;
+}
+/*End of making CSS for contact us section*/
+
+/*Start making CSS for download application section*/
+.footer > .top > .wrapper > .right {
+  width: max-content;
+}
+.footer > .top > .wrapper > .right > .application {
+  font-family: YekanBakh-Bold;
+  color: var(--textColor-2);
+  font-size: 12px;
+  text-align: end;
+}
+.footer > .top > .wrapper > .right > .apps {
+  width: 415px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4px 5px;
+}
+.footer > .top > .wrapper > .right > .apps > .appLink {
+  width: fit-content;
+  height: 40px;
+}
+/*End of making CSS for download application section*/
+/*End of making CSS for top section*/
+
+/*Start making CSS for bottom section*/
+.footer > .bottom {
+  width: inherit;
+  height: 39px;
+  background-color: var(--green-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: YekanBakh-Bold;
+  font-size: 12px;
+  color: var(--textColor-1);
+}
+/*End of making CSS for bottom section*/

@@ -1,0 +1,89 @@
+/*Animation for submenu*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    display: flex;
+    opacity: 1;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+/*Animation for rotating angle icon*/
+@keyframes rotateAngleUp {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotateAngleDown {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.rotateAngleUp {
+  animation-name: rotateAngleUp;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.rotateAngleDown {
+  animation-name: rotateAngleDown;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/*Animation for rotating angle icon (navigation section)*/
+@keyframes rotateAngleLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotateAngleDown-2 {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.rotateAngleLeft {
+  animation-name: rotateAngleLeft;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.rotateAngleDown-2 {
+  animation-name: rotateAngleDown-2;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
